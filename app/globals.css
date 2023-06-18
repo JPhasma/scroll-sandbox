@@ -25,6 +25,16 @@ body {
   visibility: visible;
 }
 
+header {
+  background: white;
+  border-bottom: 1px solid #aaa;
+  padding: 1rem;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  top: 0;
+}
+
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;

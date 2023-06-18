@@ -30,8 +30,11 @@ function FadeInSection(props) {
 export default function Home() {
   return (
     <main>
-      <h1>Scroll Sandbox</h1>
-      {colours.length}
+      <header>
+        <h1>Scroll Sandbox</h1>
+        {colours.length}
+      </header>
+
       {colours.map((colour) => {
         return (
           <FadeInSection key={colour}>
