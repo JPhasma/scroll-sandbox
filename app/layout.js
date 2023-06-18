@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './globals.css';
 import { Inter } from 'next/font/google';
 
@@ -13,7 +14,12 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body className={inter.className}>
         <header>
-          <h1>Scroll Sandbox</h1>
+          <h1>
+            <Link href={'/'}>Scroll Sandbox</Link>
+          </h1>
+          <Link href={'/'}>Scroll Sandbox</Link> |{' '}
+          <Link href={'/horizontal'}>Horizontal</Link> |{' '}
+          <Link href={'/gsap'}>gsap</Link>
         </header>
         {children}
       </body>
