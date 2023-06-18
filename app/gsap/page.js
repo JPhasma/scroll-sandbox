@@ -46,13 +46,16 @@ function GSAP(props) {
   // we have access to our DOM elements here
   useEffect(() => {
     // Add animations to be played here once page has loaded
-    gsap.to(header.current, { color: 'red', duration: 2 });
-    gsap.to(divOne.current, { color: 'red', duration: 1 });
+    gsap.to(header.current, { color: 'black', duration: 2 });
+    gsap.to(divOne.current, { color: 'black', duration: 3 });
   }, [header, divOne]);
 
   return (
     <div className='gsap_page'>
-      <h1 ref={header}>GSAP - here we go!</h1>
+      <h1 ref={header}>GSAP - 1st example</h1>
+      <div className='trigger_container' ref={divOne}>
+        <h3>scroll down for TextReveal example</h3>
+      </div>
       <div className='spacing-small'></div>
       <div className='reveal'>
         <div ref={triggerRef}>
@@ -66,9 +69,6 @@ function GSAP(props) {
         </div>
       </div>
       <div className='spacing'></div>
-      <div className='trigger_container' ref={divOne}>
-        <h3>divOne</h3>
-      </div>
     </div>
   );
 }
