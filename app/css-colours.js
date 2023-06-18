@@ -1,5 +1,5 @@
 /* Borrowed from http://colours.neilorangepeel.com */
-export default [
+const colours = [
   'deeppink',
   'deepskyblue',
   'whitesmoke',
@@ -151,3 +151,5 @@ export default [
   'sienna',
   'teal',
 ];
+
+export default colours;
