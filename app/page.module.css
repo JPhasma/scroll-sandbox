@@ -4,6 +4,7 @@
 
 .colour_container {
   /* border: 1px solid #aaa; */
-  padding: 15rem 5rem;
-  height: 60vh;
+  padding: 5rem;
+  height: 10vh;
+  margin: 3rem;
 }
