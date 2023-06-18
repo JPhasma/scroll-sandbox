@@ -1,5 +1,7 @@
 /* Borrowed from http://colours.neilorangepeel.com */
 export default [
+  'deeppink',
+  'deepskyblue',
   'whitesmoke',
   'snow',
   'tomato',
